@@ -1,0 +1,34 @@
+class Prodotti{
+    nome;
+    marca;
+    categoria;
+    prezzo;
+    quantità;
+
+    constructor (nome, marca, categoria, prezzo, quantità)
+{
+    this.nome = nome;
+        this.marca = marca;
+        this.categoria = categoria;
+        this.prezzo = prezzo;
+        this.quantità = quantità;
+}
+}
+
+let P1 = new Prodotti('Riso', 'Scotti', 'Cibo', '4', '10');
+let P2 = new Prodotti('Quaderno', 'Pigna', 'Cancelleria', '2', '30');
+let P3 = new Prodotti('Cellulare', 'Apple', 'Telefonia', '1000', '200');
+
+console.log(P1);
+console.log(P2);
+console.log(P3);
+
+function Elenco1(){
+    console.log(this.nome + ' ' + this.marca + ' ' + this.categoria + ' ' + this.prezzo + ' ' + this.quantità)
+};
+
+let newArr = [];
+newArr.push(P1, P2, P3);
+console.log(P1);
+console.log(P2);
+console.log(P3);
